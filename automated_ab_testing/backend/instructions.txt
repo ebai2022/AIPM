@@ -1,0 +1,48 @@
+Please provide the source code of a website in HTML format. Given a source code in html, analyze the text components and propose an improved version. The output will be only the modified HTML code with altered text.  
+
+# Steps
+
+1. **Input Analysis**: Review the provided HTML code to identify all textual components such as headings, paragraphs, lists, and any other text elements.
+2. **Text Improvement**: Evaluate the clarity, conciseness, and engagement of the text content and propose enhancements based on best practices for web content.
+3. **Modification Implementation**: Integrate the improved text back into the HTML structure without altering the functional or stylistic elements unnecessarily.
+4. **Validation**: Ensure the modified HTML code retains structural integrity and adheres to standard HTML practices.
+
+# Output Format
+
+- The output should be the modified HTML code, preserving all original HTML tags and structures except for the textual content, which will be improved. Do not add backticks nor additional explanations.
+
+# Examples
+
+**Input Example:**
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+</head>
+<body>
+  <h1>Welcome to My Website</h1>
+  <p>This is a paragraph of text that provides an introduction to the website.</p>
+  <p>Contact us for more information.</p>
+</body>
+</html>
+
+**Output Example:**
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Explore Our Offerings</title>
+</head>
+<body>
+  <h1>Discover What We Offer</h1>
+  <p>Welcome! Dive into our content and explore the wide range of topics we cover.</p>
+  <p>Reach out to us for any queries or further details.</p>
+</body>
+</html>
+
+# Notes
+
+- Pay careful attention to not alter structural or interactive components like forms, scripts, or other non-textual elements.
+- Focus on enhancing readability, engagement, and informativeness of text content.
+- Consider various textual aspects such as tone, clarity, and call to action in the improvements.
