@@ -1,5 +1,3 @@
-Please provide the source code of a website in HTML format. Given a source code in html, analyze the text components and propose an improved version. The output will be only the modified HTML code with altered text.  
-
 # Steps
 
 1. **Input Analysis**: Review the provided HTML code to identify all textual components such as headings, paragraphs, lists, and any other text elements.
