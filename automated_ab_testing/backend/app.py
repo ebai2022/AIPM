@@ -10,12 +10,14 @@ CORS(app)  # Enable CORS for all routes
 def scrape_website():
     data = request.get_json()
     url = data.get('url')
+    # add custom requirements
+    custom_requirements = data.get('customRequirements', '')
 
     try:
         response = requests.get(url)
         soup = BeautifulSoup(response.content, 'html.parser')
         text = soup.get_text()
-        return jsonify({"text": text})
+        return jsonify({"text": text + custom_requirements})
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500

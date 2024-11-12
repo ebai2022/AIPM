@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import { Button } from "../components/ui/button"
 import { Input } from "../components/ui/input"
+import { Textarea } from "../components/ui/textarea"
 import { Globe, Loader } from 'lucide-react'
 import Link from 'next/link'
 import { scrapeWebsite } from '../services/api'
 
 export default function Testing() {
   const [url, setUrl] = useState('')
+  const [customRequirements, setCustomRequirements] = useState('')
   const [response, setResponse] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
@@ -18,7 +20,7 @@ export default function Testing() {
     setLoading(true)
 
     try {
-      const suggestions = await scrapeWebsite(url)
+      const suggestions = await scrapeWebsite(url, customRequirements)
       setResponse(suggestions)
     } catch (error: any) {
       setError(`Failed to scrape the website. Error: ${error.message || error}`)
@@ -57,6 +59,13 @@ export default function Testing() {
                 className="flex-1"
               />
             </div>
+            <Textarea
+              placeholder="OPTIONAL: Enter any specific requirements or target audience details (e.g., 'We are a luxury brand with more mature clients' or 'I want to target a more Gen Z audience')"
+              value={customRequirements}
+              onChange={(e) => setCustomRequirements(e.target.value)}
+              rows={4}
+              className="w-full"
+            />
             <Button type="submit" className="w-full" disabled={loading}>
               {loading ? <Loader className="mr-2 h-4 w-4 animate-spin" /> : null}
               {loading ? 'Analyzing...' : 'Get A/B Test Suggestions'}
