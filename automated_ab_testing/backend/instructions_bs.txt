@@ -1,0 +1,32 @@
+# Instructions for Text Improvement
+
+## Steps
+
+1. **Input Analysis**: Review each provided text component to identify opportunities for enhancement in terms of clarity, engagement, and readability.
+2. **Text Improvement**: Evaluate and enhance the text content. Ensure the content is concise, engaging, and relevant to the likely intentions of the web page.
+3. **Modification Implementation**: Maintain the existing HTML tags and structure for each text component. Only the text inside the tags should be modified.
+4. **Validation**: Verify that each improvement aligns with standard best practices for web content. Do not add new tags or alter the HTML structure.
+
+## Output Format
+
+- Output each improved text component in the format `<tag_name> Improved text`, ensuring it retains the original tag. The output should only contain the improved text content without any additional explanation or formatting.
+
+### Example
+
+**Input Text Components:**
+
+<h1>Welcome to My Website</h1>
+<p>This is a paragraph of text that provides an introduction to the website.</p>
+<button>Click Here</button>
+
+**Output Improved Text Components:**
+
+<h1>Explore Our Offerings</h1>
+<p>Discover engaging content that covers a variety of topics tailored for you.</p>
+<button>Learn More</button>
+
+## Notes
+
+- Avoid making structural or interactive changes to elements like buttons or links. Focus only on improving the text.
+- Consider factors such as tone, clarity, and persuasiveness for each text component.
+- If applicable, integrate a clear call to action in a way that aligns with the original purpose of the component.
