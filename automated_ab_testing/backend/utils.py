@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 from litellm import completion
 
-with open('/home/agatha/Desktop/MA3/sem proj/api_key_nlp_lab.txt', 'r') as file:
+with open("../../../api_key_aipm.txt", 'r') as file:
     OPENAI_API_KEY = file.read().strip()
 os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
 
@@ -45,7 +45,7 @@ def fetch_and_parse_url(url):
 def extract_text_elements(soup):
     # Only relevant text elements for modification
     text_elements = {}
-    for tag in soup.find_all(['h1', 'h2', 'h3', 'button', 'a', 'p']):
+    for tag in soup.find_all(['h1', 'h2', 'h3', 'button', 'p']):
         if tag.string:
             text_elements[tag] = tag.string.strip()
     return text_elements

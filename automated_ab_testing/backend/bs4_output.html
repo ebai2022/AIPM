@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+
+<html lang="fr-CH">
+<head>
+<meta charset="utf-8"/>
+<!-- 
+	Copyright 2017 WNG SA, all rights reserved
+	
+	  WNG SA - Passage St-François 9 - CH-1003 Lausanne
+	  Tel +41 21 320 11 11 - Fax +41 21 320 11 10
+	  http://www.wng.ch/ - info[at]wng[dot]ch
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2024 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+<base href="https://www.lausanne-palace.ch/"/>
+<meta content="TYPO3 CMS" name="generator">
+<meta content="Bienvenue au Lausanne Palace, hôtel historique au cœur de Lausanne. Découvrez son univers, ses restaurants et bars ainsi que ses chambres et son concept spa." name="description"/>
+<meta content="WNG agence digitale" name="author"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="fr" name="language"/>
+<meta content="WNG SA © 2018" name="copyright"/>
+<link href="https://www.lausanne-palace.ch/typo3temp/assets/compressed/Basic-be5012d9a7c23089970b41d05c488a93.css?1678354900" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.lausanne-palace.ch/typo3temp/assets/compressed/all-f4104c7755db0d4c661a5d0b97c9748f.css?1636381463" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.lausanne-palace.ch/typo3temp/assets/compressed/jquery.fancybox.min-1cab78df39939da0bc05cc6c5b4c34ee.css?1687260790" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.lausanne-palace.ch/typo3temp/assets/compressed/custom-31ab256fb1087372109ff14dc139936b.css?1687260790" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.lausanne-palace.ch/typo3temp/assets/compressed/bootstrap.min-75d55a5a168f0fc250fdc11b74007e8a.css?1627557895" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.lausanne-palace.ch/typo3temp/assets/compressed/materialize-custom-form-f61384457828f6ede6f69c4e804f1ca9.css?1627557895" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.lausanne-palace.ch/typo3temp/assets/compressed/jquery-ui.min-4b9e22cc32cc0f6848f3eb286c045a5b.css?1627557895" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.lausanne-palace.ch/typo3temp/assets/compressed/slick-5ec354300a052dee6f950edb77435ada.css?1718792007" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.lausanne-palace.ch/typo3temp/assets/compressed/main-294510140e28322f98173ced5d84c6a5.css?1728376091" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.lausanne-palace.ch/typo3temp/assets/compressed/font-awesome.min-20744065148c633f5307205ddd9b3636.css?1627557895" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.lausanne-palace.ch/typo3temp/assets/compressed/scotch_fonts-450dcdff82d101775b9d803afc39aa4c.css?1669651254" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.lausanne-palace.ch/typo3temp/assets/compressed/lausanne-palace-b84e220424d55664a16239a1dec95be7.css?1719837878" media="all" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+/*<![CDATA[*/
+<!-- 
+/*InlineDefaultCss*/
+/* default styles for extension "tx_frontend" */
+    .ce-align-left { text-align: left; }
+    .ce-align-center { text-align: center; }
+    .ce-align-right { text-align: right; }
+
+    .ce-table td, .ce-table th { vertical-align: top; }
+
+    .ce-textpic, .ce-image, .ce-nowrap .ce-bodytext, .ce-gallery, .ce-row, .ce-uploads li, .ce-uploads div { overflow: hidden; }
+
+    .ce-left .ce-gallery, .ce-column { float: left; }
+    .ce-center .ce-outer { position: relative; float: right; right: 50%; }
+    .ce-center .ce-inner { position: relative; float: right; right: -50%; }
+    .ce-right .ce-gallery { float: right; }
+
+    .ce-gallery figure { display: table; margin: 0; }
+    .ce-gallery figcaption { display: table-caption; caption-side: bottom; }
+    .ce-gallery img { display: block; }
+    .ce-gallery iframe { border-width: 0; }
+    .ce-border img,
+    .ce-border iframe {
+        border: 2px solid #000000;
+        padding: 0px;
+    }
+
+    .ce-intext.ce-right .ce-gallery, .ce-intext.ce-left .ce-gallery, .ce-above .ce-gallery {
+        margin-bottom: 10px;
+    }
+    .ce-image .ce-gallery { margin-bottom: 0; }
+    .ce-intext.ce-right .ce-gallery { margin-left: 10px; }
+    .ce-intext.ce-left .ce-gallery { margin-right: 10px; }
+    .ce-below .ce-gallery { margin-top: 10px; }
+
+    .ce-column { margin-right: 10px; }
+    .ce-column:last-child { margin-right: 0; }
+
+    .ce-row { margin-bottom: 10px; }
+    .ce-row:last-child { margin-bottom: 0; }
+
+    .ce-above .ce-bodytext { clear: both; }
+
+    .ce-intext.ce-left ol, .ce-intext.ce-left ul { padding-left: 40px; overflow: auto; }
+
+    /* Headline */
+    .ce-headline-left { text-align: left; }
+    .ce-headline-center { text-align: center; }
+    .ce-headline-right { text-align: right; }
+
+    /* Uploads */
+    .ce-uploads { margin: 0; padding: 0; }
+    .ce-uploads li { list-style: none outside none; margin: 1em 0; }
+    .ce-uploads img { float: left; padding-right: 1em; vertical-align: top; }
+    .ce-uploads span { display: block; }
+
+    /* Table */
+    .ce-table { width: 100%; max-width: 100%; }
+    .ce-table th, .ce-table td { padding: 0.5em 0.75em; vertical-align: top; }
+    .ce-table thead th { border-bottom: 2px solid #dadada; }
+    .ce-table th, .ce-table td { border-top: 1px solid #dadada; }
+    .ce-table-striped tbody tr:nth-of-type(odd) { background-color: rgba(0,0,0,.05); }
+    .ce-table-bordered th, .ce-table-bordered td { border: 1px solid #dadada; }
+
+    /* Space */
+    .frame-space-before-extra-small { margin-top: 1em; }
+    .frame-space-before-small { margin-top: 2em; }
+    .frame-space-before-medium { margin-top: 3em; }
+    .frame-space-before-large { margin-top: 4em; }
+    .frame-space-before-extra-large { margin-top: 5em; }
+    .frame-space-after-extra-small { margin-bottom: 1em; }
+    .frame-space-after-small { margin-bottom: 2em; }
+    .frame-space-after-medium { margin-bottom: 3em; }
+    .frame-space-after-large { margin-bottom: 4em; }
+    .frame-space-after-extra-large { margin-bottom: 5em; }
+
+    /* Frame */
+    .frame-ruler-before:before { content: ''; display: block; border-top: 1px solid rgba(0,0,0,0.25); margin-bottom: 2em; }
+    .frame-ruler-after:after { content: ''; display: block; border-bottom: 1px solid rgba(0,0,0,0.25); margin-top: 2em; }
+    .frame-indent { margin-left: 15%; margin-right: 15%; }
+    .frame-indent-left { margin-left: 33%; }
+    .frame-indent-right { margin-right: 33%; }
+
+-->
+/*]]>*/
+</style>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://www.lausanne-palace.ch/fileadmin/templates/commun/js/vendor/jquery-2.2.0.min.js?1507293418"></script>
+<script src="https://www.lausanne-palace.ch/fileadmin/templates/commun/js/vendor/jquery-ui-1.12.4.min.js?1507293419"></script>
+<script src="https://www.lausanne-palace.ch/typo3temp/assets/js/e9e07c5ca0.js?1627557894"></script>
+<title>Lausanne Palace - Lausanne, Suisse</title><link href="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon"><meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/> <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"/>
+<meta content="GJv2zf2HfTll6oVvffhQh06P97xELW6HHa5jDJVhFM8" name="google-site-verification">
+<script defer="" src="https://www.thehotelsnetwork.com/js/hotel_price_widget.js?hotel_id=1089428&amp;property_id=1013929&amp;account_key=082A928765B384DAC0029178B5A16208"></script> <script src="/tarteaucitron/tarteaucitron.js" type="text/javascript"></script>
+<script type="text/javascript">
+    tarteaucitron.init({
+      "hashtag": "#tarteaucitron", /* Ouverture automatique du panel avec le hashtag */
+      "highPrivacy": false, /* désactiver le consentement implicite (en naviguant) ? */
+      "orientation": "top", /* le bandeau doit être en haut (top) ou en bas (bottom) ? */
+      "adblocker": false, /* Afficher un message si un adblocker est détecté */
+      "showAlertSmall": false, /* afficher le petit bandeau en bas à droite ? */
+      "cookieslist": true, /* Afficher la liste des cookies installés ? */
+      "removeCredit": false, /* supprimer le lien vers la source ? */
+      "mandatory": false, /* Show a message about mandatory cookies */
+      "showIcon": false /* Show cookie icon to manage cookies */,
+      "googleConsentMode": true, /* Enable Google Consent Mode v2 for Google ads and GA4 */
+      "removeCredit": true,/* Remove credit link */
+      "moreInfoLink": false,
+    });
+  </script> <script type="text/javascript">
+        tarteaucitron.user.facebookpixelId = '3591799041103463'; tarteaucitron.user.facebookpixelMore = function () { /* add here your optionnal facebook pixel function */ };
+        (tarteaucitron.job = tarteaucitron.job || []).push('facebookpixel');
+  </script> <script type="text/javascript">
+tarteaucitron.user.googletagmanagerId = 'GTM-P5DNJWS';
+(tarteaucitron.job = tarteaucitron.job || []).push('googletagmanager');
+</script> <script type="text/javascript">
+  (tarteaucitron.job = tarteaucitron.job || []).push('gcmadstorage');
+  (tarteaucitron.job = tarteaucitron.job || []).push('gcmanalyticsstorage');
+  (tarteaucitron.job = tarteaucitron.job || []).push('gcmfunctionality');
+  (tarteaucitron.job = tarteaucitron.job || []).push('gcmpersonalization');
+  (tarteaucitron.job = tarteaucitron.job || []).push('gcmadsuserdata');
+  (tarteaucitron.job = tarteaucitron.job || []).push('gcmsecurity');
+  </script>
+<link href="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/icons/apple-touch-icon-57x57.png" rel="apple-touch-icon-precomposed" sizes="57x57">
+<link href="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/icons/apple-touch-icon-114x114.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+<link href="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/icons/apple-touch-icon-72x72.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+<link href="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/icons/apple-touch-icon-144x144.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+<link href="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/icons/apple-touch-icon-60x60.png" rel="apple-touch-icon-precomposed" sizes="60x60">
+<link href="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/icons/apple-touch-icon-120x120.png" rel="apple-touch-icon-precomposed" sizes="120x120">
+<link href="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/icons/apple-touch-icon-76x76.png" rel="apple-touch-icon-precomposed" sizes="76x76">
+<link href="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/icons/apple-touch-icon-152x152.png" rel="apple-touch-icon-precomposed" sizes="152x152">
+<link href="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/icons/favicon-196x196.png" rel="icon" sizes="196x196" type="image/png">
+<link href="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/icons/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+<link href="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/icons/favicon-128.png" rel="icon" sizes="128x128" type="image/png"/>
+<meta content=" " name="application-name"/>
+<meta content="#FFFFFF" name="msapplication-TileColor"/>
+<meta content="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/icons/mstile-144x144.png" name="msapplication-TileImage"/>
+<meta content="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/icons/mstile-70x70.png" name="msapplication-square70x70logo"/>
+<meta content="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/icons/mstile-150x150.png" name="msapplication-square150x150logo"/>
+<meta content="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/icons/mstile-310x150.png" name="msapplication-wide310x150logo"/>
+<meta content="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/icons/mstile-310x310.png" name="msapplication-square310x310logo"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript">
+        tarteaucitron.user.multiplegtagUa = ['UA-116920980-1', 'G-21ZV9B4PPR'];
+        (tarteaucitron.job = tarteaucitron.job || []).push('multiplegtag');
+        </script> <meta content="Lausanne Palace - Lausanne, Suisse" property="og:title"/><meta content="https://www.lausanne-palace.ch/accueil/" property="og:url"/><meta content="Lausanne Palace" property="og:site_name"/><meta content="Bienvenue au Lausanne Palace, hôtel historique au cœur de Lausanne. Découvrez son univers, ses restaurants et bars ainsi que ses chambres et son concept spa." property="og:description"/><meta content="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/logo-icons/lausanne_palace_og.jpg" property="og:image"/><meta content="Lausanne Palace - Lausanne, Suisse" property="twitter:title"/><meta content="https://www.lausanne-palace.ch/accueil/" property="twitter:url"/><meta content="Bienvenue au Lausanne Palace, hôtel historique au cœur de Lausanne. Découvrez son univers, ses restaurants et bars ainsi que ses chambres et son concept spa." property="twitter:description"/><meta content="https://www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/logo-icons/lausanne_palace_og.jpg" property="twitter:image"/>
+<link href="https://www.lausanne-palace.ch/accueil/" rel="canonical"/>
+<link href="https://www.lausanne-palace.ch/accueil/" hreflang="fr-CH" rel="alternate"/>
+<link href="https://www.lausanne-palace.ch/ar/%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9-%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9/" hreflang="ar-AR" rel="alternate"/>
+<link href="https://www.lausanne-palace.ch/zh/%E6%AD%A1%E8%BF%8E/" hreflang="zh-cn" rel="alternate"/>
+<link href="https://www.lausanne-palace.ch/ru/dobro-pozhalovat/" hreflang="ru-RU" rel="alternate"/>
+<link href="https://www.lausanne-palace.ch/de/homepage/" hreflang="de-CH" rel="alternate"/>
+<link href="https://www.lausanne-palace.ch/en/welcome-page/" hreflang="en-GB" rel="alternate"/>
+<link href="https://www.lausanne-palace.ch/accueil/" hreflang="x-default" rel="alternate"/>
+</link></link></link></link></link></link></link></link></link></link></link></link></meta></link></meta></head>
+<body class="homepage">
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"Lausanne Palace","url":"https://www.lausanne-palace.ch","sameAs":["https://www.facebook.com/lausannepalaceetspa/"]}</script>
+<script src="https://secure.leadforensics.com/js/144216.js" type="text/javascript"></script>
+<noscript><img src="https://secure.leadforensics.com/144216.png" style="display:none;"/></noscript>
+<!-- HEADER -->
+<header id="header">
+<div class="navbar-header">
+<button class="navbar-toggle collapsed" type="button">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-toggle-text" href="">menu</a>
+</div>
+<div class="icon-lp">
+<img src="//www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/logo-icons/lp_symbole_2024.svg"/>
+</div>
+<!-- NAVBAR -->
+<div id="navbar">
+<div class="menu-container">
+<div class="tx-indexedsearch-searchbox">
+<form action="/accueil/recherche/?tx_indexedsearch_pi2%5Baction%5D=search&amp;tx_indexedsearch_pi2%5Bcontroller%5D=Search&amp;cHash=8749ffec1dfe318309c684a23fd121da" id="tx_indexedsearch" method="post">
+<div>
+<input name="tx_indexedsearch_pi2[__referrer][@extension]" type="hidden" value="IndexedSearch"/>
+<input name="tx_indexedsearch_pi2[__referrer][@controller]" type="hidden" value="Search"/>
+<input name="tx_indexedsearch_pi2[__referrer][@action]" type="hidden" value="form"/>
+<input name="tx_indexedsearch_pi2[__referrer][arguments]" type="hidden" value="YTowOnt987c78ba9465e4f3a5025a2893a1a55f26f3712b2"/>
+<input name="tx_indexedsearch_pi2[__referrer][@request]" type="hidden" value='{"@extension":"IndexedSearch","@controller":"Search","@action":"form"}a0321fb4e1f941079eeaf8cce4291c7cb3cb8a3d'/>
+<input name="tx_indexedsearch_pi2[__trustedProperties]" type="hidden" value='{"search":{"_sections":1,"_freeIndexUid":1,"pointer":1,"ext":1,"searchType":1,"defaultOperand":1,"mediaType":1,"sortOrder":1,"group":1,"languageUid":1,"desc":1,"numberOfResults":1,"extendedSearch":1,"sword":1,"submitButton":1}}4fe3a028259a9ef7e70579b8ac0d269859011db9'/>
+</div>
+<div class="tx-indexedsearch-hidden-fields">
+<input name="tx_indexedsearch_pi2[search][_sections]" type="hidden" value="0"/>
+<input class="tx_indexedsearch_freeIndexUid" id="tx_indexedsearch_freeIndexUid" name="tx_indexedsearch_pi2[search][_freeIndexUid]" type="hidden" value="_"/>
+<input class="tx_indexedsearch_pointer" id="tx_indexedsearch_pointer" name="tx_indexedsearch_pi2[search][pointer]" type="hidden" value="0"/>
+<input name="tx_indexedsearch_pi2[search][ext]" type="hidden" value=""/>
+<input name="tx_indexedsearch_pi2[search][searchType]" type="hidden" value="1"/>
+<input name="tx_indexedsearch_pi2[search][defaultOperand]" type="hidden" value="0"/>
+<input name="tx_indexedsearch_pi2[search][mediaType]" type="hidden" value="-1"/>
+<input name="tx_indexedsearch_pi2[search][sortOrder]" type="hidden" value="rank_flag"/>
+<input name="tx_indexedsearch_pi2[search][group]" type="hidden" value=""/>
+<input name="tx_indexedsearch_pi2[search][languageUid]" type="hidden" value="0"/>
+<input name="tx_indexedsearch_pi2[search][desc]" type="hidden" value=""/>
+<input name="tx_indexedsearch_pi2[search][numberOfResults]" type="hidden" value="10"/>
+<input name="tx_indexedsearch_pi2[search][extendedSearch]" type="hidden" value=""/>
+</div>
+<fieldset>
+<div class="tx-indexedsearch-form fa fa-search">
+<input class="tx-indexedsearch-searchbox-sword" name="tx_indexedsearch_pi2[search][sword]" placeholder="Recherche" type="text" value=""/>
+<input class="tx-indexedsearch-searchbox-button" name="tx_indexedsearch_pi2[search][submitButton]" type="submit" value=""/>
+</div>
+</fieldset>
+<!-- -->
+</form>
+</div>
+<!--
+-->
+<ul class="menu"><li class="active"><a href="/accueil/" target="_top"><i class="fa fa-home"></i><span style="display:none;">Accueil</span></a></li><li><a href="/hotel/presentation/" target="_top">Hôtel</a></li><li><a href="/chambres-suites/" target="_top">Chambres &amp; Suites</a></li><li><a href="/restaurants-bars/" target="_top">Restaurants &amp; Bars</a></li><li><a href="/spa/le-spa/" target="_top">Spa</a></li><li><a href="/reunions-evenements/" target="_top">Réunions &amp; Evénements</a></li><li><a href="https://fr.lhw.com/leaders-club-hub?hotel=6839" target="_blank">Leaders Club</a></li><li><a href="/offres/" target="_top">Offres</a></li><li><a href="/agenda/" target="_top">Agenda</a></li></ul>
+<div class="social-menu">
+<!--<p>#lausannepalace</p>-->
+<ul class="social-list clearfix">
+<li><a href="https://www.facebook.com/lausannepalace" target="_blank"><i aria-hidden="true" class="fa fa-facebook-official"></i></a></li>
+<li><a href="https://www.instagram.com/lausannepalace/" target="_blank"><i aria-hidden="true" class="fa fa-instagram"></i></a></li>
+<li><a href="https://www.linkedin.com/company/lausanne-palace-&amp;-spa/" target="_blank"><i aria-hidden="true" class="fa fa-linkedin-square"></i></a></li>
+</ul>
+<a class="menu-newsletter-link" href="https://newsletter.sandoz-hotels.ch/fr/home?property=lausanne-palace&amp;subscriptions=LPA" target="_blank"><i aria-hidden="true" class="fa fa-envelope-o"></i>S’inscrire à la newsletter</a>
+</div>
+</div>
+<div class="tx-dce-pi1">
+<ul class="menu-img">
+<li>
+<a href="/restaurants-bars/brasserie-grand-chene/lecailler/" target="_top">
+<span>L'Ecailler</span>
+</a>
+<img alt="" height="245" src="https://www.lausanne-palace.ch/fileadmin/_processed_/7/c/csm_Ecailler_2024_740cbe19bc.png" width="665">
+</img></li>
+<li>
+<a href="/spa/le-spa/" target="_top">
+<span>Spa</span>
+</a>
+<img alt="" height="245" src="https://www.lausanne-palace.ch/fileadmin/_processed_/8/2/csm_Spa_2024_burger_720d419bfa.png" width="665"/>
+</li>
+<li>
+<a href="/chambres-suites/suite-samaranch/" target="_top">
+<span>Suite Samaranch</span>
+</a>
+<img alt="" height="245" src="https://www.lausanne-palace.ch/fileadmin/_processed_/4/5/csm_Suite_Samaranch_ae17e98d3f.png" width="665"/>
+</li>
+<li>
+<a href="https://www.lausanne-palace.ch/offres-forfaits/detail-offres-forfaits/news/sejour-gastronomique/" target="_blank">
+<span>Séjour Gastronomique</span>
+</a>
+<img alt="" height="245" src="https://www.lausanne-palace.ch/fileadmin/_processed_/3/1/csm_Sejour_La_Table_burger_ae656aa018.png" width="665"/>
+</li>
+</ul>
+</div>
+</div>
+<!-- END NAVABR -->
+<div class="navbar-footer">
+<ul class="lang-nav"><li class="active lang"> <a href="/accueil/" target="_top">FR</a> </li><li class="lang"> <a href="/en/welcome-page/" target="_top">EN</a> </li><li class="lang"> <a href="/de/homepage/" target="_top">DE</a> </li></ul>
+<a class="gift" href="https://shop.e-guma.ch/lausanne-palace-spa/fr/bons-cadeaux" target="_blank"><img src="//www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/logo-icons/gift.svg"/></a>
+</div>
+</header>
+<!-- END HEADER -->
+<!--TYPO3SEARCH_begin-->
+<!-- TOP CONTENT -->
+<div class="content-top home">
+<div class="logo-header">
+<a href="https://www.lausanne-palace.ch/accueil/"><img alt="Logo Lausanne Palace" class="logo" src="//www.lausanne-palace.ch/fileadmin/templates/lausanne-palace.ch/img/logo-icons/logo_lausanne_palace_2024.svg"/></a>
+</div>
+<!-- SLIDER TOP -->
+<div class="slider-top">
+<div class="slick-accueil">
+<div class="slide-0" style="background-image:url(https://www.lausanne-palace.ch/fileadmin/documents/lausanne-palace.ch/images/Accueil/Slider/Ecailler_slider_fullscreen.png)">
+<style media="all and (max-width: 767px)">
+								.slide-0 {
+									background-image:url(https://www.lausanne-palace.ch/fileadmin/documents/lausanne-palace.ch/images/Accueil/Slider/Ecailler_slider_fullscreen_mobile.png) !important;
+								}
+						</style>
+<a href="/restaurants-bars/brasserie-grand-chene/lecailler/" target="_top">
+<div class="slick-caption-container">
+<div class="slick-caption">
+<div class="slick-title-container">
+<h2>"Ecailler est de Retour !"</h2>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="slide-1" style="background-image:url(https://www.lausanne-palace.ch/fileadmin/documents/lausanne-palace.ch/images/Fullscreen/Lausanne-Palace_Chambres-et-Suites_Fullscreen.png)">
+<style media="all and (max-width: 767px)">
+								.slide-1 {
+									background-image:url(https://www.lausanne-palace.ch/fileadmin/documents/lausanne-palace.ch/images/Fullscreen_mobile/Lausanne-Palace_Chambres-et-Suites_Fullscreen-mobile.png) !important;
+								}
+						</style>
+<a href="/chambres-suites/" target="_top">
+<div class="slick-caption-container">
+<div class="slick-caption">
+<div class="slick-title-container">
+<h2>"Stylish Rooms &amp; Trendy Suites"</h2>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="slide-2" style="background-image:url(https://www.lausanne-palace.ch/fileadmin/documents/lausanne-palace.ch/images/Fullscreen/Lausanne-Palace_Spa_Fullscreen.png)">
+<style media="all and (max-width: 767px)">
+								.slide-2 {
+									background-image:url(https://www.lausanne-palace.ch/fileadmin/documents/lausanne-palace.ch/images/Fullscreen_mobile/Lausanne-Palace_Spa_Fullscreen-mobile.png) !important;
+								}
+						</style>
+<a href="/spa/le-spa/" target="_top">
+<div class="slick-caption-container">
+<div class="slick-caption">
+<div class="slick-title-container">
+<h2>Glow-Up Spa</h2>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="slide-3" style="background-image:url(https://www.lausanne-palace.ch/fileadmin/documents/lausanne-palace.ch/images/Reunions_Evenements/Galerie_salons_prives/Lausanne-Palace-VD-Salon-Sir-Peter-Ustinov_2.jpg)">
+<style media="all and (max-width: 767px)">
+								.slide-3 {
+									background-image:url(https://www.lausanne-palace.ch/fileadmin/documents/lausanne-palace.ch/images/Accueil/Slider/Events_slider_mobile.png) !important;
+								}
+						</style>
+<a href="/reunions-evenements/" target="_top">
+<div class="slick-caption-container">
+<div class="slick-caption">
+<div class="slick-title-container">
+<h2>Réunions Fun &amp; Événements</h2>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="slide-4" style="background-image:url(https://www.lausanne-palace.ch/fileadmin/documents/lausanne-palace.ch/images/Fullscreen/Photo_Agenda_2025.png)">
+<style media="all and (max-width: 767px)">
+								.slide-4 {
+									background-image:url(https://www.lausanne-palace.ch/fileadmin/documents/lausanne-palace.ch/images/Fullscreen/Photo_Agenda_2025.png) !important;
+								}
+						</style>
+<a href="/agenda/" target="_top">
+<div class="slick-caption-container">
+<div class="slick-caption">
+<div class="slick-title-container">
+<h2>"LP Connect : Rejoins les Rendez-vous !"</h2>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="scroll-btn">
+<svg style="enable-background:new 0 0 30 52;" version="1.1" viewbox="0 0 30 52" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+<g id="mouse">
+<path d="M2.5,14.9v22.3c0,5.5,4.2,12.4,12.5,12.4s12.5-6.9,12.5-12.4V14.9c0-5.5-5-12.4-12.5-12.4
+            S2.5,9.4,2.5,14.9z M0,14.9C0,6.7,6.7,0,15,0c8.3,0,15,6.7,15,14.9v22.3C30,45.4,23.3,52,15,52C6.7,52,0,45.4,0,37.2V14.9z" id="mouse-shape"></path>
+</g>
+<g id="scroll">
+<ellipse cx="15" cy="15.9" id="dot" rx="5" ry="5"></ellipse>
+</g>
+</svg>
+</div>
+<div class="contact-book-block">
+<div class="contact-book-header">
+<span class="bell-icon"></span>Contact &amp; Réservation
+          <div class="plus-btn">
+<span class="icon-bar arrow"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar arrow"></span>
+</div>
+</div>
+<div class="contact-book-content">
+<div class="contact-book-picture"></div>
+<div class="contact-book-booking">
+<div class="title">
+<h4>Réserve ta place !</h4>
+</div>
+<form action="https://be.synxis.com/" method="GET" onsubmit="_gaq.push(['_linkByPost', this]);" target="_blank">
+<input name="locale" type="hidden" value="fr-FR"/>
+<input id="datedebut" name="arrive" type="hidden" value=""/>
+<input name="chain" type="hidden" value="24447"/>
+<input name="hotel" type="hidden" value="6839"/>
+<input name="src" type="hidden" value="30"/>
+<input id="datefin" name="depart" type="hidden" value=""/>
+<div class="start">
+<label>Arrivée</label><input class="datepicker readonlyjm" id="startdate" onchange="setEndDate();" type="text">
+</input></div>
+<div class="end">
+<label class="dep">Départ</label><input class="datepicker readonlyjm" id="enddate" type="text">
+</input></div>
+<!--<input type="hidden" name="arrivalDate" value="" id="datedebut">-->
+<!--<input type="hidden" name="nights" value="" id="nights">-->
+<div class="person">
+<label>Adultes</label>
+<div class="select-container">
+<select class="" name="adult">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</select>
+<i aria-hidden="true" class="fa fa-caret-down"></i>
+</div>
+</div>
+<div class="person">
+<label>Enfants</label>
+<div class="select-container">
+<select class="" name="child">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+</select>
+<i aria-hidden="true" class="fa fa-caret-down"></i>
+</div>
+</div>
+<input class="button" onclick="setNumberNights();" type="submit" value="Vérifier la disponibilité">
+</input></form>
+<a class="modify-book-link" href="https://be.synxis.com/signIn?&amp;chain=24447&amp;hotel=6839&amp;SRC=30&amp;locale=fr-FR" target="_blank">Modifier ma réservation</a>
+</div>
+<div class="contact-book-info">
+<a href="tel:+41213313131">+41 21 331 31 31</a>
+<a href="mailto:info@lausanne-palace.ch">info@lausanne-palace.ch</a>
+<a href="https://www.lausanne-palace.ch/hotel/acces/">Se rendre à l'hôtel</a>
+</div>
+<link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet"/>
+<script type="text/javascript">
+    function setEndDate(){
+      var e=$("#startdate").val().split("/"),
+      t=new Date(Number(e[2]),
+      Number(e[1])-1,Number(e[0])),
+      a=new Date(t.getTime()+864e5);
+      document.getElementById("enddate").value=("0"+a.getDate()).slice(-2)+"/"+("0"+(a.getMonth()+1)).slice(-2)+"/"+a.getFullYear();
+      document.getElementById("datefin").value=a.getFullYear()+"-"+("0"+(a.getMonth()+1)).slice(-2)+"-"+("0"+a.getDate()).slice(-2);
+    }
+
+    function setStartDate(){
+      var e=$("#enddate").val().split("/"),
+      t=new Date(Number(e[2]),
+      Number(e[1])-1,
+      Number(e[0])),
+      a=new Date(t.getTime()-864e5);
+      document.getElementById("startdate").value=a.getDate()+"/"+(a.getMonth()+1)+"/"+a.getFullYear()
+    }
+
+    var date=new Date,
+    input_start=document.getElementById("startdate"),
+    input_end=document.getElementById("enddate");
+    input_start.value=("0"+date.getDate()).slice(-2)+"/"+("0"+(date.getMonth()+1)).slice(-2)+"/"+date.getFullYear();
+    var next=new Date(Date.now()+864e5);
+    input_end.value=("0"+(date.getDate()+1)).slice(-2)+"/"+("0"+(date.getMonth()+1)).slice(-2)+"/"+date.getFullYear(),
+    input_end.value=("0"+next.getDate()).slice(-2)+"/"+("0"+(next.getMonth()+1)).slice(-2)+"/"+next.getFullYear(),
+
+    $(".datepicker").datepicker({dateFormat:"dd/mm/yy"}),
+    $(".readonlyjm").on("focus",function(){$(this).trigger("blur")}),
+    $(".datepicker").datepicker($.datepicker.regional["fr-CH"]),
+    $.datepicker.regional["fr-CH"]={closeText:"Fermer",prevText:"&#x3C;Préc",nextText:"Suiv&#x3E;",currentText:"Courant",monthNames:["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"],monthNamesShort:["Janv.","Févr.","Mars","Avril","Mai","Juin","Juil.","Août","Sept.","Oct.","Nov.","Déc."],dayNames:["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"],dayNamesShort:["Dim.","Lun.","Mar.","Mer.","Jeu.","Ven.","Sam."],dayNamesMin:["D","L","M","M","J","V","S"],weekHeader:"Sm",dateFormat:"dd.mm.yy",firstDay:1,isRTL:!1,showMonthAfterYear:!1,yearSuffix:""},
+    $.datepicker.setDefaults($.datepicker.regional["fr-CH"]);
+
+    input_debut = document.getElementById("datedebut");
+    input_fin = document.getElementById("datefin");
+    input_debut.value = input_start.value.split('/')[2] + '-' + input_start.value.split('/')[1] + '-' + input_start.value.split('/')[0];
+    input_fin.value = input_end.value.split('/')[2] + '-' + input_end.value.split('/')[1] + '-' + input_end.value.split('/')[0];
+
+    $('#startdate').change(function() {
+      input_debut.value = input_start.value.split('/')[2] + '-' + input_start.value.split('/')[1] + '-' + input_start.value.split('/')[0];
+      input_fin.value = input_end.value.split('/')[2] + '-' + input_end.value.split('/')[1] + '-' + input_end.value.split('/')[0];
+    });
+
+    $('#enddate').change(function() {
+      input_fin.value = input_end.value.split('/')[2] + '-' + input_end.value.split('/')[1] + '-' + input_end.value.split('/')[0];
+    });
+  </script>
+</div>
+</div>
+</div>
+</div>
+<!-- END SLIDER TOP -->
+
+<!-- END TOP CONTENT -->
+<div id="content">
+<div class="frame frame-default frame-type-html frame-layout-0" id="c14779">
+<h1 style="text-indent:-5000px;font-size:1px;display:block;height:1px;margin:0;">"Lausanne Palace - Lausanne, Suisse"</h1>
+</div>
+<div class="section"><div class="container"></div><div class="container">
+<div class="frame frame-default frame-type-textpic frame-layout-0" id="c62350">
+<header>
+<h2 class="">Nouvelle version :
+  
+Une Saison Olympique ? Totalement Surréaliste !</h2>
+</header>
+<div class="ce-textpic ce-center ce-below">
+<div class="ce-bodytext">
+<p>It looks like you didn't provide the original text you'd like me to rewrite. Could you please share the text so I can help make it more engaging for a younger audience?</p>
+<p>🌟 Découvrez le Lausanne Palace : Le Cœur Battant des Olympiques à Lausanne! 🌟
+
+Situé au cœur vibrant de Lausanne, la Capitale Olympique, le légendaire drapeau aux cinq anneaux agite fièrement son emblème sur le fronton du Lausanne Palace – une exclusivité mondiale en dehors des sites officiels. Depuis 1980, ce palace élégant est la résidence officielle des présidents du CIO (Comité International Olympique) et a été honoré du prestigieux Mérite Olympique.
+
+Mais le Lausanne Palace, c’est bien plus qu’un simple hôtel. C’est le lieu de rendez-vous incontournable pour les leaders et les passionnés du mouvement olympique. Un espace où les générations se rencontrent, échangent et où chaque instant contribue à écrire la prochaine page de l’histoire sportive.
+
+👉 Que tu sois un fan de sport, un aspirant athlète ou simplement curieux de découvrir les coulisses des Jeux Olympiques, le Lausanne Palace t’invite à vivre une expérience unique où tradition et modernité se rencontrent. Rejoins cette communauté dynamique et fais partie de l’aventure olympique!
+
+#LausannePalace #Olympiques #Sport #HistoireEnDirect #CapitaleOlympique</p>
+<p>Ça peut paraître un peu surréaliste, non ? Pourtant, c’est bien l’artiste suisse Jean Tinguely, fondateur du mouvement des Nouveaux Surréalistes en 1960 et grand ami du Lausanne Palace, qui vous dira le contraire ! Il a décoré un café et créé, en 1990, l’affiche du 75ᵉ anniversaire du CIO à la demande de son ami Juan-Antonio Samaranch, alors président. Et comme il n’y a pas de hasard dans cette histoire, le pôle muséal Plateforme 10, situé à quelques minutes du Lausanne Palace, célèbre actuellement le centenaire du Surréalisme. Ne manquez pas cette célébration unique !</p>
+<p><strong>"Lancer le tout premier Lausanne Palace City Guide, c’était carrément mérité pour célébrer une saison olympique… et un brin surréaliste !"</strong></p>
+</div>
+<div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+<div class="ce-outer">
+<div class="ce-inner">
+<div class="ce-row">
+<div class="ce-column">
+<figure class="image">
+<img alt="" class="image-embed-item" height="533" loading="lazy" src="https://www.lausanne-palace.ch/fileadmin/_processed_/a/b/csm_Course_couloir_ac025a5102.png" width="800">
+</img></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tx-dce-pi1">
+<div class="row title">
+<h2>It looks like there’s no original text provided. Please share the text you'd like me to rewrite to appeal to a younger audience, and I'll be happy to help!</h2>
+<div class="title-button-container">
+<a class="text-btn" href="https://online.flippingbook.com/view/71232173/" rel="noreferrer" target="_blank"> City Guide</a>
+</div>
+</div>
+</div><div class="row"><div class="col-md-6">
+<div class="frame frame-default frame-type-text frame-layout-0" id="c62356">
+<header>
+<h3 class="">Ça Bouge</h3>
+</header>
+<h4 class="text-justify">🎷 LP’s Jazzy Vibes 🎶</h4>
+<p>Chaque jeudi soir, plongez dans l’atmosphère élégante et intime du LP’s Bar et laissez-vous envoûter par notr programmation en live.<br/> Que vous soyez passionné de jazz ou en quête d’une expérience musicale sophistiquée, profitez d’un moment de détente idéal entre amis ou collègues.Hello! It looks like you mentioned "None" as the original text. Could you please provide the specific text you'd like me to rewrite? I'm here to help make it more engaging and tailored for a younger audience!</p>
+<p><strong><a href="https://www.lausanne-palace.ch/agenda/page-detail-agenda/news/lps-jazz/" target="_blank">Découvre le programme !</a></strong></p>
+<h4 class="text-justify">It looks like the original text is missing. Could you please provide the text you'd like me to rewrite to appeal to a younger audience? I'm here to help!</h4>
+<h4 class="text-justify">SquadGoals Comedy Club</h4>
+<p class="text-justify">Avec 10 ans d’expérience à fond, AM Squad te propose chaque mois une sélection de comédiens ultra talentueux. Attends-toi à retrouver des noms déjà connus et à découvrir de nouveaux talents qu’ils ont minutieusement choisis pour toi. Prépare-toi, on garde les artistes secrets pour que la révélation sur scène soit une vraie surprise. Tu vas voir des humoristes qui repoussent les limites, jouent avec les mots et les situations pour te livrer des moments inoubliables et complètement magiques. Ne manque pas cette expérience unique !</p>
+<p class="text-justify"><strong><a href="https://www.lausanne-palace.ch/agenda/page-detail-agenda/news/squad-comedy-club/" target="_blank">"Ne manque pas les prochains événements !"</a></strong></p>
+</div>
+</div><div class="col-md-6">
+<div class="frame frame-default frame-type-image frame-layout-0" id="c62357">
+<div class="ce-image ce-center ce-above">
+<div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+<div class="ce-outer">
+<div class="ce-inner">
+<div class="ce-row">
+<div class="ce-column">
+<figure class="image">
+<img alt="" class="image-embed-item" height="700" loading="lazy" src="https://www.lausanne-palace.ch/fileadmin/_processed_/5/3/csm__1326385_e85e466f61.jpg" width="525">
+</img></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<div class="frame frame-default frame-type-div frame-layout-0" id="c62359">
+<hr class="ce-div"/>
+</div>
+<div class="row"><div class="col-md-6">
+<div class="frame frame-default frame-type-image frame-layout-0" id="c62362">
+<div class="ce-image ce-center ce-above">
+<div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+<div class="ce-outer">
+<div class="ce-inner">
+<div class="ce-row">
+<div class="ce-column">
+<figure class="image">
+<img alt="" class="image-embed-item" height="1181" loading="lazy" src="https://www.lausanne-palace.ch/fileadmin/documents/lausanne-palace.ch/images/Page_speciale/Olympisme/Spa.png" width="1772"/>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="col-md-6">
+<div class="frame frame-default frame-type-text frame-layout-0" id="c62360">
+<header>
+<h3 class="">Nouvelle arrivée : Cinq Mondes débarque ! 🚀</h3>
+</header>
+<p>Au Lausanne Palace, notre spa se distingue en choisissant de ne pas être affilié à une marque exclusive – et c'est une décision intentionnelle. Véritable oasis au cœur de la ville, il reflète parfaitement l'esprit de notre établissement : un espace unique réservé à nos clients et membres, une échappée belle pour tous ceux qui vivent ou travaillent à proximité et qui souhaitent se détendre, relâcher la pression et s'évader… Notre carte des soins a été élaborée avec soin grâce à la collaboration d'un petit éventail de marques sélectionnées spécifiquement pour leurs expertises complémentaires :</p><ul> <li><strong>Valmont</strong>, une marque suisse très haut-de-gamme pour des soins du visage pointus</li> <li>Nouveauté du printemps, <strong>les rituels de soins Cinq Mondes</strong>, inspirés par la sagesse ancestrale des cinq continents</li> <li>Des soins mains et pieds spécifiques</li> <li>Le <strong>Hair Spa by Aveda</strong> du Lausanne Palace</li> </ul><p>Envie d'une <strong><a href="https://www.lausanne-palace.ch/offres-forfaits/detail-offres-forfaits/news/experience-bien-etre/" target="_blank">expérience bien-être absolue</a></strong> ?It looks like you haven't provided any text to rewrite. Could you please share the original content you'd like me to make more engaging for a younger audience?</p>
+</div>
+<div class="tx-dce-pi1">
+<div class="icon-container">
+<a class="ico-class" href="https://online.flippingbook.com/view/600022919/" rel="noreferrer" target="_blank"><span class="book-icon"></span>Découvrez les soins</a>
+</div>
+</div></div></div>
+<div class="frame frame-default frame-type-div frame-layout-0" id="c62364">
+<hr class="ce-div"/>
+</div>
+<div class="tx-dce-pi1">
+<script type="text/javascript">
+		 		numberimg62365 = 6;
+			</script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			$('#c62365 .gallery-three-columns .gallery-img').each(function( index ) {
+				if (index < numberimg62365) {
+					$(this).addClass('img-show'); 
+				}
+			});
+			$("#c62365 .gallery-three-columns").each(function(){
+				var galerieChildrenThree = $(this).children(".gallery-img").length; 
+				if (galerieChildrenThree <= numberimg62365){
+					$(this).find(".more-img").remove();
+				}
+			});
+		});
+	</script>
+<div id="c62365">
+<div class="gallery-container gallery-three-columns">
+<div class="gallery-img col-md-4 col-sm-6">
+<a class="html5lightbox" data-group="galerie-62365" href="/fileadmin/documents/lausanne-palace.ch/images/Page_speciale/Olympisme/Golf.png" title="">
+<div class="gallery-hover"></div>
+<img alt="" height="405" src="https://www.lausanne-palace.ch/fileadmin/_processed_/c/1/csm_Golf_d1ddbb6c91.png" width="720"/>
+</a>
+</div>
+<div class="gallery-img col-md-4 col-sm-6">
+<a class="html5lightbox" data-group="galerie-62365" href="/fileadmin/documents/lausanne-palace.ch/images/Page_speciale/Olympisme/Sdb_tennis.png" title="">
+<div class="gallery-hover"></div>
+<img alt="" height="405" src="https://www.lausanne-palace.ch/fileadmin/_processed_/8/8/csm_Sdb_tennis_dda1a98c44.png" width="720"/>
+</a>
+</div>
+<div class="gallery-img col-md-4 col-sm-6">
+<a class="html5lightbox" data-group="galerie-62365" href="/fileadmin/documents/lausanne-palace.ch/images/Page_speciale/Olympisme/Homard_surrealiste.png" title="">
+<div class="gallery-hover"></div>
+<img alt="" height="405" src="https://www.lausanne-palace.ch/fileadmin/_processed_/4/1/csm_Homard_surrealiste_4974000e9b.png" width="720"/>
+</a>
+</div>
+<a class="button more-img" href="javascript:void(0)">Afficher plus d'images</a>
+</div>
+</div>
+</div></div></div>
+</div><!-- /content -->
+<a class="scroll-top" href=""></a>
+<!--TYPO3SEARCH_end-->
+<!-- /content -->
+<!-- FOOTER -->
+<div class="footer-newsletter clearfix">
+<div class="newsletter-img" style="background-image: url('https://www.lausanne-palace.ch/fileadmin/documents/lausanne-palace.ch/images/Footer/Footer_NL_LPA.png');"></div>
+<div class="newsletter-content">
+<h3>Restons connectés !</h3>
+<p>Rejoins notre newsletter et reste toujours au courant des dernières actus !</p>
+<a class="newsletter-btn" href="https://newsletter.sandoz-hotels.ch/fr/home?property=lausanne-palace&amp;subscriptions=LPA" rel="noreferrer" target="_blank">
+			S'abonner à la newsletter
+		</a>
+<div class="newsletter-social">
+<p>Rejoins-nous sur :</p>
+<ul class="social-list">
+<li>
+<a href="https://www.facebook.com/lausannepalace" rel="noreferrer" target="_blank">
+<i class="fa fa-facebook-official"></i>
+</a>
+</li>
+<li>
+<a href="https://www.instagram.com/lausannepalace/" rel="noreferrer" target="_blank">
+<i class="fa fa-instagram"></i>
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/company/lausanne-palace-&amp;-spa/" rel="noreferrer" target="_blank">
+<i class="fa fa-linkedin-square"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<footer class="new-footer">
+<!-- BOTTOM FOOTER -->
+<div id="bottom-footer">
+<div class="container">
+<div class="top-footer-hotel-link clearfix">
+<div class="hotel-infos clearfix">
+<div class="hotel-infos-left">
+
+                  Hôtel Lausanne Palace<br/>
+
+                  Rue du Grand-Chêne 7-9<br/>
+
+                  1003 Lausanne
+
+                </div>
+<div class="hotel-infos-right">
+<a href="tel:+41213313131">+41 21 331 31 31</a><br/>
+<a href="maito:info@lausanne-palace.ch">info@lausanne-palace.ch</a>
+</div>
+</div>
+<ul class="hotel-extern-list">
+<li>
+<a href="https://fr.lhw.com/account/membership-signup" target="_blank"><img alt="Leaders Club" src="https://www.brp.ch/fileadmin/templates/commun/img/logo-icons/Leaders-Club-Logo.png"/></a>
+</li>
+<li>
+<a href="https://www.lhw.com/" target="_blank"><img alt="Leading Hotels" src="https://www.brp.ch/fileadmin/templates/commun/img/logo-icons/logo_leading-grey.svg"/></a>
+</li>
+<li>
+<a href="http://www.swissdeluxehotels.com/" target="_blank"><img alt="Swiss Deluxe Hotels" src="https://www.brp.ch/fileadmin/templates/commun/img/logo-icons/logo-swiss-delux-hotels-grey.svg"/></a>
+</li>
+<!--<li>
+                  <a href="http://virtuosotravel.fr/" target="_blank"><img src="https://www.brp.ch/fileadmin/templates/commun/img/logo-icons/Virtuoso_Logo_RGB.png" alt="Virtuoso"></a>
+                </li>
+                <li>
+                  <a href="https://fr.tripadvisor.ch/Hotel_Review-s1-g188107-d234007-Reviews-Lausanne_Palace-Lausanne_Canton_of_Vaud.html" target="_blank"><img src="/fileadmin/templates/lausanne-palace.ch/img/logo-icons/TC_2021_LL_TRANSPARENT_BG_RGB.png"></a>
+                </li>-->
+<li>
+<a href="https://www.myswitzerland.com/fr-ch/planification/vie-pratique/la-suisse-durable-par-nature/prestataires-de-services-swisstainable/#InpageNavigation1_0" target="_blank"><img alt="Swisstainable" class="small-logo" src="https://www.lausanne-palace.ch/fileadmin/templates/commun/img/logo_swisstainable_2.png"/></a>
+</li>
+<!--<li>
+                  <a href='https://www.myswitzerland.com/fr-ch/planification/vie-pratique/clean-safe/' target="_blank"><img src="https://www.brp.ch/fileadmin/templates/commun/img/logo-icons/logo-clean_safe.svg" alt="Clean & Safe" class="small-logo"></a>
+                </li>-->
+</ul>
+</div>
+<div class="bottom-footer-hotel-link clearfix">
+<a class="sandoz-logo" href="http://www.sandoz-hotels.ch/" target="_blank">
+<img alt="Fondation des hôtels Sandoz" src="https://www.brp.ch/fileadmin/templates/commun/img/logo-icons/logo_fondation_sandoz.svg"/>
+</a>
+<div class="bottom-footer-hotel">
+<ul class="hotel-list">
+<li><a href="//www.brp.ch/" target="_blank">Beau-Rivage Palace</a></li>
+<li><a href="//www.angleterre-residence.ch/" target="_blank">Angleterre &amp; Résidence</a></li>
+<li><a href="//www.chateaudouchy.ch/" target="_blank">Château d'Ouchy</a></li>
+<li><a href="//www.palafitte.ch/" target="_blank">Hôtel Palafitte</a></li>
+<li><a href="//www.riffelalp.com/" target="_blank">Riffelalp 2222m</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- END BOTTOM FOOTER -->
+<!-- INSTAGRAM FEED -->
+<div class="frame frame-default frame-type-list frame-layout-1" id="c50712">
+<div class="tx-ns-instagram">
+<div class="nsinstagram-v1apiview footer-feed">
+<div class="gallery row">
+<a class="insta-page-link col-md-2" href="https://www.instagram.com/lausannepalace/" target="_blank">
+<div class="gallery-item insta-page-link-inner" style="color: #1d1d1b;">
+<i class="fa fa-instagram"></i>
+<span>#LausannePalace</span>
+</div>
+</a>
+<a data-caption="La Mer célébrée au Lausanne Palace 🦪
+
+L’Écailler de La Brasserie s’impose comme l’adresse incontournable pour les épicuriens en quête de raffinement et d’originalité. Retrouvez langoustines, homards, palourdes et autres oursins 🦞
+-
+#LausannePalace #mylausannepalace #leadinghotelsoftheworld #lhw #swissdeluxehotels #lhwtraveler #sandozhotels #lausanne #switzerland
+📽️ @leonardo.villiger" data-fancybox="fancybox-17989631378718189" href="https://scontent-zrh1-1.cdninstagram.com/o1/v/t16/f1/m86/3146F05B2B8550637A30FAEDEDA82781_video_dashinit.mp4?efg=eyJ4cHZfYXNzZXRfaWQiOjkyMDI1ODUzOTk1NTg3MSwidmVuY29kZV90YWciOiJ4cHZfcHJvZ3Jlc3NpdmUuSU5TVEFHUkFNLkNMSVBTLkMzLjcyMC5kYXNoX2Jhc2VsaW5lXzFfdjEifQ&amp;_nc_ht=scontent-zrh1-1.cdninstagram.com&amp;_nc_cat=104&amp;vs=48f0d74bdaa5d286&amp;_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8zMTQ2RjA1QjJCODU1MDYzN0EzMEZBRURFREE4Mjc4MV92aWRlb19kYXNoaW5pdC5tcDQVAALIAQAVAhg6cGFzc3Rocm91Z2hfZXZlcnN0b3JlL0dHd1JyQnNyUUU1bDdQa0dBRzZIQXVMQVNia1licV9FQUFBRhUCAsgBACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJr6agbaMvqIDFQIoAkMzLBdAOgAAAAAAABgSZGFzaF9iYXNlbGluZV8xX3YxEQB1_gcA&amp;ccb=9-4&amp;oh=00_AYDid2AuwP3nJOzx6JhtZBSaQSq0gC4CxRRunK6wFl8pnw&amp;oe=673EA892&amp;_nc_sid=1d576d">
+<div class="gallery-item">
+<img alt="La Mer célébrée au Lausanne Palace 🦪
+
+L’Écailler de La Brasserie s’impose comme l’adresse incontournable pour les épicuriens en quête de raffinement et d’originalité. Retrouvez langoustines, homards, palourdes et autres oursins 🦞
+-
+#LausannePalace #mylausannepalace #leadinghotelsoftheworld #lhw #swissdeluxehotels #lhwtraveler #sandozhotels #lausanne #switzerland
+📽️ @leonardo.villiger" class="gallery-image" src="https://scontent-zrh1-1.cdninstagram.com/v/t51.29350-15/464187026_1071104247610874_676021135012875214_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=ehLbmYo4ynYQ7kNvgGCc59b&amp;_nc_zt=23&amp;_nc_ht=scontent-zrh1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;_nc_gid=ASfrNSAc6oGLKAPVeJWnS1M&amp;oh=00_AYCEWX8GmiR8q9LqdwEtJyx2M-BAOY2t8CVaKyYKj_uIuQ&amp;oe=6742A475">
+<div class="gallery-item-type">
+<span class="visually-hidden">
+                    Video
+                </span>
+<svg class="video-icon" viewbox="0 0 122.88 111.34" width="35"><path d="M23.59 0h75.7a23.68 23.68 0 0123.59 23.59v64.16a23.56 23.56 0 01-6.88 16.66l-.22.2a23.53 23.53 0 01-16.44 6.73H23.59a23.53 23.53 0 01-16.66-6.93l-.2-.22A23.46 23.46 0 010 87.75V23.59A23.66 23.66 0 0123.59 0zM54 47.73l25.25 17.63a3.79 3.79 0 01.14 6.3L54.22 89.05a3.75 3.75 0 01-2.4.87A3.79 3.79 0 0148 86.13V50.82a3.77 3.77 0 016-3.09zM7.35 26.47h14l9.06-19.12h-6.82A16.29 16.29 0 007.35 23.59v2.88zm29.7-19.12L28 26.47h25.36l9.07-19.09zm32 0l-9.13 19.12h24.7L93.7 7.35zm31.32 0l-9.11 19.12h24.27v-2.88a16.32 16.32 0 00-15.2-16.21zm15.2 26.68H7.35v53.72A16.21 16.21 0 0012 99.05l.17.16A16.19 16.19 0 0023.59 104h75.7a16.21 16.21 0 0011.3-4.6l.16-.18a16.17 16.17 0 004.78-11.46v-53.7z" fill="#fff"></path></svg>
+</div>
+</img></div>
+</a>
+<a data-caption="Autumn vibes 🍂
+📷 @harry_basel 
+-
+#LausannePalace #mylausannepalace #leadinghotelsoftheworld #lhw #swissdeluxehotels #lhwtraveler #sandozhotels #lausanne #switzerland" data-fancybox="fancybox-18068752429620588" href="https://scontent-zrh1-1.cdninstagram.com/v/t39.30808-6/462574118_18462864658025656_2109628099469402182_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=xgVKv7kll0UQ7kNvgGI4dhz&amp;_nc_zt=23&amp;_nc_ht=scontent-zrh1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;_nc_gid=ASfrNSAc6oGLKAPVeJWnS1M&amp;oh=00_AYBVnT6jNURuihoFUq6W4z5BR5ER8loC6ik4308ZE8-Xaw&amp;oe=67428C42">
+<div class="gallery-item">
+<img alt="Autumn vibes 🍂
+📷 @harry_basel 
+-
+#LausannePalace #mylausannepalace #leadinghotelsoftheworld #lhw #swissdeluxehotels #lhwtraveler #sandozhotels #lausanne #switzerland" class="gallery-image" src="https://scontent-zrh1-1.cdninstagram.com/v/t39.30808-6/462574118_18462864658025656_2109628099469402182_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=xgVKv7kll0UQ7kNvgGI4dhz&amp;_nc_zt=23&amp;_nc_ht=scontent-zrh1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;_nc_gid=ASfrNSAc6oGLKAPVeJWnS1M&amp;oh=00_AYBVnT6jNURuihoFUq6W4z5BR5ER8loC6ik4308ZE8-Xaw&amp;oe=67428C42">
+</img></div>
+</a>
+<a data-caption="Une oasis de paix et de beauté, au cœur de Lausanne
+-
+#LausannePalace #mylausannepalace #leadinghotelsoftheworld #lhw #swissdeluxehotels #lhwtraveler #sandozhotels #lausanne #switzerland
+📸 @sebastienagnetti" data-fancybox="fancybox-18063893350581648" href="https://scontent-zrh1-1.cdninstagram.com/v/t39.30808-6/461379486_18459096142025656_4487020999703320290_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=eoF7utFcReEQ7kNvgFRxyat&amp;_nc_zt=23&amp;_nc_ht=scontent-zrh1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;_nc_gid=ASfrNSAc6oGLKAPVeJWnS1M&amp;oh=00_AYC6yE_fXFZd9w9Gja_eU4MqxirpG3EHbSnFWSK517PIjA&amp;oe=6742AA01">
+<div class="gallery-item">
+<img alt="Une oasis de paix et de beauté, au cœur de Lausanne
+-
+#LausannePalace #mylausannepalace #leadinghotelsoftheworld #lhw #swissdeluxehotels #lhwtraveler #sandozhotels #lausanne #switzerland
+📸 @sebastienagnetti" class="gallery-image" src="https://scontent-zrh1-1.cdninstagram.com/v/t39.30808-6/461379486_18459096142025656_4487020999703320290_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=eoF7utFcReEQ7kNvgFRxyat&amp;_nc_zt=23&amp;_nc_ht=scontent-zrh1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;_nc_gid=ASfrNSAc6oGLKAPVeJWnS1M&amp;oh=00_AYC6yE_fXFZd9w9Gja_eU4MqxirpG3EHbSnFWSK517PIjA&amp;oe=6742AA01">
+</img></div>
+</a>
+<a data-caption="Perfecting every detail to offer you an unforgettable stay.
+-
+#LausannePalace #mylausannepalace #leadinghotelsoftheworld #lhw #swissdeluxehotels #lhwtraveler #sandozhotels #lausanne #switzerland
+📸 @sebastienagnetti" data-fancybox="fancybox-18031666010209735" href="https://scontent-zrh1-1.cdninstagram.com/v/t51.2885-15/460600238_2860973214054452_8475618315450608051_n.jpg?_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=W9Plom-VQXoQ7kNvgH_cR5L&amp;_nc_zt=23&amp;_nc_ht=scontent-zrh1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AYA8HmW6kIhXWcK4F7-teUIjEnBmLwKHHeqFnZo7t5U1fw&amp;oe=67428028">
+<div class="gallery-item">
+<img alt="Perfecting every detail to offer you an unforgettable stay.
+-
+#LausannePalace #mylausannepalace #leadinghotelsoftheworld #lhw #swissdeluxehotels #lhwtraveler #sandozhotels #lausanne #switzerland
+📸 @sebastienagnetti" class="gallery-image" src="https://scontent-zrh1-1.cdninstagram.com/v/t51.2885-15/460600238_2860973214054452_8475618315450608051_n.jpg?_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=W9Plom-VQXoQ7kNvgH_cR5L&amp;_nc_zt=23&amp;_nc_ht=scontent-zrh1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AYA8HmW6kIhXWcK4F7-teUIjEnBmLwKHHeqFnZo7t5U1fw&amp;oe=67428028">
+</img></div>
+</a>
+<a data-caption="Le LP’s Bar du Lausanne Palace est désormais « The Place to Be ».
+-
+#LausannePalace #mylausannepalace #leadinghotelsoftheworld #lhw #swissdeluxehotels #lhwtraveler #sandozhotels #lausanne #switzerland
+📸 @sebastienagnetti / @atelier_poisson" data-fancybox="fancybox-17956233968696913" href="https://scontent-zrh1-1.cdninstagram.com/v/t39.30808-6/458113276_18454670113025656_6884515370316129464_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=4Wln1sbm8ykQ7kNvgF9eoR0&amp;_nc_zt=23&amp;_nc_ht=scontent-zrh1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;_nc_gid=ASfrNSAc6oGLKAPVeJWnS1M&amp;oh=00_AYCGdr6Rpzg1DFACRPRPhSvBPl7h9EElooDDx8cWXo0O4A&amp;oe=6742ADA9">
+<div class="gallery-item">
+<img alt="Le LP’s Bar du Lausanne Palace est désormais « The Place to Be ».
+-
+#LausannePalace #mylausannepalace #leadinghotelsoftheworld #lhw #swissdeluxehotels #lhwtraveler #sandozhotels #lausanne #switzerland
+📸 @sebastienagnetti / @atelier_poisson" class="gallery-image" src="https://scontent-zrh1-1.cdninstagram.com/v/t39.30808-6/458113276_18454670113025656_6884515370316129464_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=4Wln1sbm8ykQ7kNvgF9eoR0&amp;_nc_zt=23&amp;_nc_ht=scontent-zrh1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;_nc_gid=ASfrNSAc6oGLKAPVeJWnS1M&amp;oh=00_AYCGdr6Rpzg1DFACRPRPhSvBPl7h9EElooDDx8cWXo0O4A&amp;oe=6742ADA9"/>
+<div class="gallery-item-type">
+<span class="visually-hidden">
+                    Gallery
+                </span>
+<svg class="clone-icon" viewbox="0 0 115.77 122.88" width="35"><path clip-rule="evenodd" d="M89.62 13.96v7.73h12.2v.02c3.85.01 7.34 1.57 9.86 4.1 2.5 2.51 4.06 5.98 4.07 9.82h.02v73.3h-.02c-.01 3.84-1.57 7.33-4.1 9.86-2.51 2.5-5.98 4.06-9.82 4.07v.02H40.1v-.02c-3.84-.01-7.34-1.57-9.86-4.1-2.5-2.51-4.06-5.98-4.07-9.82h-.02V92.51h-12.2v-.02c-3.84-.01-7.34-1.57-9.86-4.1-2.5-2.51-4.06-5.98-4.07-9.82H0V13.95h.02c.01-3.85 1.58-7.34 4.1-9.86C6.63 1.59 10.1.03 13.94.02V0H75.67v.02c3.85.01 7.34 1.57 9.86 4.1 2.5 2.51 4.06 5.98 4.07 9.82h.02v.02zm-10.58 7.73v-7.75h.02c0-.91-.39-1.75-1.01-2.37-.61-.61-1.46-1-2.37-1v.02H13.95v-.02c-.91 0-1.75.39-2.37 1.01-.61.61-1 1.46-1 2.37h.02v64.62h-.02c0 .91.39 1.75 1.01 2.37.61.61 1.46 1 2.37 1v-.02h12.2V35.64h.02c.01-3.85 1.58-7.34 4.1-9.86 2.51-2.5 5.98-4.06 9.82-4.07v-.02H79.04zm26.14 87.23V35.63h.02c0-.91-.39-1.75-1.01-2.37-.61-.61-1.46-1-2.37-1v.02H40.09v-.02c-.91 0-1.75.39-2.37 1.01-.61.61-1 1.46-1 2.37h.02v73.3h-.02c0 .91.39 1.75 1.01 2.37.61.61 1.46 1 2.37 1v-.02H101.83v.02c.91 0 1.75-.39 2.37-1.01.61-.61 1-1.46 1-2.37h-.02v-.01z" fill-rule="evenodd"></path></svg>
+</div>
+</div>
+</a>
+<a data-caption="Le LP’s Bar du Lausanne Palace est désormais « The Place to Be ».
+-
+#LausannePalace #mylausannepalace #leadinghotelsoftheworld #lhw #swissdeluxehotels #lhwtraveler #sandozhotels #lausanne #switzerland
+📸 @sebastienagnetti / @atelier_poisson" data-fancybox="fancybox-17956233968696913" href="https://scontent-zrh1-1.cdninstagram.com/v/t39.30808-6/457804767_18454670122025656_1926218973930419601_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=lrDmDG5xCh4Q7kNvgG09HDc&amp;_nc_zt=23&amp;_nc_ht=scontent-zrh1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;_nc_gid=ASfrNSAc6oGLKAPVeJWnS1M&amp;oh=00_AYA6euFaGQfdKXYJYr079VyzqRdUjyWsDibaEAc4zJ2rUg&amp;oe=6742907B" style="display: none;">https://www.instagram.com/p/C_cxP0XIOFI/</a>
+</div>
+</div>
+</div>
+</div>
+<!-- COPYRIGHT FOOTER -->
+<div id="copyright-footer">
+<div class="container">
+<ul class="footer-menu"><li><a href="/galerie/" target="_top">Galerie</a></li><li><a href="/carriere/" target="_top">Carrière</a></li><li><a href="/le-developpement-durable/" target="_top">Le développement durable</a></li><li><a href="/presse/communiques-de-presse/" target="_top">Presse</a></li><li><a href="/liens-partenaires/" target="_top">Liens &amp; Partenaires</a></li><li><a href="/plan-du-site/" target="_top">Plan du site</a></li><li><a href="/impressum/" target="_top">Impressum</a></li><li><a href="/politique-de-confidentialite/" target="_top">Politique de confidentialité</a></li><li><a href="javascript:tarteaucitron.userInterface.openPanel();">Gestion des données</a></li></ul>
+<div class="copyright">
+<p>© Lausanne Palace 2024</p>
+</div>
+</div>
+</div>
+<!-- END COPYRIGHT FOOTER -->
+</footer>
+<!-- END FOOTER -->
+<script src="https://www.lausanne-palace.ch/typo3conf/ext/ns_instagram/Resources/Public/Js/jquery.instagramFeed.min.js?1687260772"></script>
+<script src="https://www.lausanne-palace.ch/typo3conf/ext/ns_instagram/Resources/Public/Js/jquery.fancybox.min.js?1687260772"></script>
+<script src="https://www.lausanne-palace.ch/fileadmin/templates/commun/js/vendor/modernizr-3.3.1-respond-1.4.2.min.js?1507293420"></script>
+<script src="https://www.lausanne-palace.ch/fileadmin/templates/commun/js/vendor/bootstrap.min.js?1507293417"></script>
+<script src="https://www.lausanne-palace.ch/fileadmin/templates/commun/js/vendor/html5lightbox.js?1718872796"></script>
+<script src="https://www.lausanne-palace.ch/fileadmin/templates/commun/js/vendor/materialize.min.js?1507293420"></script>
+<script src="https://www.lausanne-palace.ch/fileadmin/templates/commun/js/vendor/slick.min.js?1718791476"></script>
+<script src="https://www.lausanne-palace.ch/fileadmin/templates/commun/js/main.js?1719569981"></script>
+</body>
+</html>
