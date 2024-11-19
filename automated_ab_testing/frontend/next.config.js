@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/automated-ab-testing",
+  basePath: "/AIPM",
   output: "export",
   reactStrictMode: true,
 };
