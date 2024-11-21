@@ -1,0 +1,6 @@
+# Ignore virtual environment directories and API keys
+venv/
+env/
+*/venv/
+*/env/
+api_key_aipm.txt
