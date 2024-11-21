@@ -4,10 +4,7 @@ export const scrapeWebsite = async (url: string, customRequirements: string): Pr
   try {
     const response = await axios.post('http://127.0.0.1:5000/api/scrape', { url, customRequirements});
 
-    // Assuming the API now returns suggestions directly
-    // If it doesn't, you may need to process response.data here
-    // return response.data.suggestions;
-    return response.data.text;
+    return response.data.html;
   } catch (error) {
     console.error('Error scraping the website:', error);
     throw error;
