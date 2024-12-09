@@ -82,7 +82,7 @@ export default function Testing() {
               />
             </div>
             <Textarea
-              placeholder="OPTIONAL: Enter any specific requirements or target audience details (e.g., 'We are a luxury brand with more mature clients' or 'I want to target a more Gen Z audience')"
+              placeholder="OPTIONAL: Enter any specific requirements or target audience details (e.g., 'We are a luxury brand with more mature clients' or 'I want to target a more Gen Z audience' or 'Do not edit the website header')"
               value={customRequirements}
               onChange={(e) => setCustomRequirements(e.target.value)}
               rows={4}

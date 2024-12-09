@@ -24,7 +24,10 @@ def scrape_website():
     data = request.get_json()
     url = data.get("url")
     # add custom requirements
-    custom_requirements = data.get("customRequirements", "Appeal to a younger audience")
+    custom_requirements = data.get(
+        "customRequirements",
+        "Appeal to possible customers that are knowledgable about this field.",
+    )
     try:
         html = generate_new_html(url, html_elements, custom_requirements)
         return jsonify({"html": html}), 200
@@ -37,15 +40,16 @@ def generate_new_html(url, html_elements, context) -> str:
     soup = BeautifulSoup(html, features="html.parser")
 
     for s in soup.find_all(html_elements):
-        if s.string and s.string.strip():
-            new_string = get_new_string(s.string, context)
+        if s.string and s.string.strip() and len(s.string) > 15:
+            new_string = get_new_string(s.string, context, url)
             s.string.replace_with(new_string)
-
     return str(soup)
 
 
-def get_new_string(original_text, context, model="gpt-4", temperature=1.2, **kwargs):
-    prompt = generate_prompt(original_text, context)
+def get_new_string(
+    original_text, context, url, model="gpt-4", temperature=0.6, **kwargs
+):
+    prompt = generate_prompt(original_text, context, url)
     messages = [{"role": "user", "content": prompt}]
 
     response = client.chat.completions.create(
@@ -58,13 +62,14 @@ def get_new_string(original_text, context, model="gpt-4", temperature=1.2, **kwa
     new_string = response.choices[0].message.content
     new_string = re.sub(
         r"[*•<>]", "", new_string
-    )  # Remove asterisks, bullet points, or HTML-like tags
+    )  # Remove asterisks, bullet points, quotations, or HTML-like tags
     new_string = new_string.strip()
-
+    if new_string[0] == '"' and new_string[-1] == '"':
+        new_string = new_string[1:-1]
     return new_string
 
 
-def generate_prompt(original_text, context):
+def generate_prompt(original_text, context, url):
     """
     Generate personalized text using an LLM model.
 
@@ -77,18 +82,23 @@ def generate_prompt(original_text, context):
     """
     # Example prompt for the model
     prompt = f"""
-    You are a highly creative and professional text generator for websites. 
-    Your task is to rewrite the following text to make it more engaging and tailored 
-    to the following user context: {context}.
-    
-    Original text: "{original_text}"
-    
-    If the information is not changeable, like an adress or a date, don't change anything and return the original text.
+    You are a highly skilled and professional text generator for websites.
 
+    Your task is to rewrite the following text when needed to make it more engaging and tailored to the following user context: {context}.
+    Original text: "{original_text}"
+    Please reference the website url for additional context: "{url}"
+
+    Instructions and requirements:
+    You should try to optimize the website for SEO as defined in 'https://developers.google.com/search/docs/fundamentals/seo-starter-guide#:~:text=SEO%E2%80%94short%20for%20search%20engine,site%20through%20a%20search%20engine.'
+    You must not misrepresent any information and must keep essential information in tact.
+    If the information is not changeable, like an address or a date, don't change anything and return the original text.
+    If you do not have enough information to make any changes for any part, return exactly the same output as the original text.
     Please return the output as clean text and keep the output approximately the same length as the original text.
+    Do not include additional quotation marks that are unnecessary for the text and remove quotations that are unnecessary.
+    Always directly respond with the text you suggest. Never return any text such as "reimagined input".
+    Please sound as natural and as human as possible. Keep headers short and concise. Take a deep breath and think carefully.
     """
     # Reßwrite the text in a way that is personalized and keeps its original intent.
-
     return prompt
 
 
